@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-height: 100vh;
+  margin: 0 auto;
+  max-width: 1440px;
+  font-size: 16px;
+  color: white;
+  font-family: "poppins", sans serif;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(../images/bg-intro-desktop.png);
+}
+.container-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 220px 120px;
+}
+.container-left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 40%;
+  margin: 0 auto;
+}
+.container-left h1 {
+  font-size: 3.4rem;
+  padding-bottom: 1rem;
+}
+.container-left p {
+  font-size: 1rem;
+}
+.container-right {
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  display: inline-block;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 6px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 12px;
+}
+.container-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 6px;
+}
+.container-form form {
+  display: flex;
+  flex-direction: column;
+}
+.container-form form input[type="text"] {
+  font-family: inherit;
+  padding: 1em 1.2em;
+  margin: 1em;
+  border-radius: 6px;
+  border-style: solid;
+}
+.container-form form input[type="text"]:focus {
+  border-radius: 6px;
+  outline-style: auto;
+}
+.container-form form input[type="submit"] {
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 20px;
+  font-family: inherit;
+}
+.container-form form input[type="submit"]:hover {
+  background-color: white transparent;
+  opacity: 0.5;
+  cursor: pointer;
+  border-bottom: 4px solid hsl(110, 85%, 21%);
+}
+.label-form {
+  color: hsl(246, 25%, 77%);
+  padding-top: 1rem;
+}
+.label-form a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+}
+/* responsive */
+@media screen and (max-width: 768px) {
+  .container-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+  }
+  .container-left {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 44px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container-wrapper {
+    margin: 120px 20px auto 20px;
+  }
+  .container-left h1 {
+    font-size: 44px;
+  }
+  .container-right {
+    width: 70%;
+  }
+  .container-form {
+    padding: 20px;
+  }
+  .container-form form input[type="text"] {
+    font-family: inherit;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 6px;
+    border-style: solid;
+  }
+  .label-form {
+    text-align: center;
+    font-size: 0.6em;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}
