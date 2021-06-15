@@ -14,7 +14,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: hsl(0, 100%, 74%);
-  background-image: url(../images/bg-intro-desktop.png);
+  background-image: url(bg-intro-desktop.png);
 }
 .container-wrapper {
   display: flex;
